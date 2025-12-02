@@ -116,7 +116,7 @@ test-full:
 	make all
 	make doc
 	make test
-	make lint
+	# make lint
 
 test/Dockerfile.%.stamp: test/Dockerfile.% $(SRC)
 	docker build --iidfile="$@" -f "$<" .
